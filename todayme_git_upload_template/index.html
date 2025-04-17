@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="오늘, 나 - 감성 문학 공간" />
+  <meta property="og:description" content="오늘의 감정을 담은 글 한 편, 마음을 위한 쉼표" />
+  <meta property="og:url" content="https://todayme.site" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>오늘, 나</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <h1>오늘, 나</h1>
+    <p class="subtitle">당신의 감정을 위한 문학 공간</p>
+    <nav class="emotion-tabs">
+      <button onclick="filterEmotion('고요')">고요</button>
+      <button onclick="filterEmotion('불안')">불안</button>
+      <button onclick="filterEmotion('상실')">상실</button>
+      <button onclick="filterEmotion('그리움')">그리움</button>
+      <button onclick="filterEmotion('회복')">회복</button>
+      <button onclick="filterEmotion('위로')">위로</button>
+    </nav>
+  </header>
+  <main id="card-container">
+    <!-- 여기에 contents/ 폴더에 있는 HTML 카드들이 삽입될 수 있음 -->
+    <p class="empty-msg">아직 업로드된 작품이 없습니다. contents 폴더에 HTML 파일을 추가해주세요.</p>
+  </main>
+  <footer>
+    <div id="ad-footer">광고가 여기에 표시됩니다.</div>
+  </footer>
+  <script>
+    function filterEmotion(emotion) {
+      const cards = document.querySelectorAll(".card");
+      cards.forEach(card => {
+        card.style.display = card.dataset.emotion === emotion ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
