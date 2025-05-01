@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Nanum Myeongjo', serif;
+  background: linear-gradient(to bottom, #fff2e6, #ffe5d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 1rem;
+}
+
+.card {
+  background: #ffffffcc;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 0.9rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #fbbd9c;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f99c74;
+}
+
+.response {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #4a3f35;
+  transition: opacity 0.5s ease;
+}
