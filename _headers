@@ -5,8 +5,4 @@
 /index.html
   Cache-Control: public, max-age=3600
 
-/en/index.html
-  Cache-Control: public, max-age=3600
 
-/ko/index.html
-  Cache-Control: public, max-age=3600
