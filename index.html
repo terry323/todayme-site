@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>todayme.site</title>
+  <meta name="description" content="TodayMe - a warm emotional AI that listens to your day.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A portal of emotional healing, creative expression, and AI-generated literature.">
+  <title>Today, Me</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Welcome to todayme.site</h1>
-    <p>Your gateway to calm, shift, echo, void, dream, and more...</p>
-  </main>
+  <div class="container">
+    <h1>What happened today?</h1>
+    <input type="text" id="userInput" placeholder="Tell me anything..." />
+    <button onclick="getResponse()">Send</button>
+    <div id="responseBox"></div>
+  </div>
+  <script src="logic.js"></script>
 </body>
 </html>
