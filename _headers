@@ -1,8 +1,0 @@
-/*
-  Cache-Control: public, max-age=31536000, immutable
-  ETag: "todayme-v1"
-
-/index.html
-  Cache-Control: public, max-age=3600
-
-
