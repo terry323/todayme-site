@@ -1,0 +1,1 @@
+subdomain=https://srv.adstxtmanager.com/19390/todayme.site
